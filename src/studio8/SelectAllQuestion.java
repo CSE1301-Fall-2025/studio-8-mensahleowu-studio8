@@ -3,7 +3,9 @@ package studio8;
 import support.cse131.NotYetImplementedException;
 
 public class SelectAllQuestion extends MultipleChoiceQuestion {
-
+	private String prompt; 
+	private String answer;
+	private String[] choices;
 	/**
 	 * Constructor
 	 * 
@@ -12,8 +14,7 @@ public class SelectAllQuestion extends MultipleChoiceQuestion {
 	 * @param choices
 	 */
 	public SelectAllQuestion(String prompt, String answer, String[] choices) {
-		// Hint: 1 point per choice
-		throw new NotYetImplementedException();
+		super(prompt, answer, choices.length, choices);
 	}
 	
 	/**
